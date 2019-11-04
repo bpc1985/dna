@@ -1,0 +1,47 @@
+.subscriptionItem {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ff007c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-size: 1rem;
+    color: #ff007c;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #7c7c7c;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  span {
+    margin-right: 10px;
+    font-size: 0.8rem;
+    color: #7c7c7c;
+  }
+
+  .btn {
+    background: #ff007c;
+    font: inherit;
+    border: 1px solid #ff007c;
+    border-radius: 3px;
+    padding: 0.25rem 1rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover, &:active {
+      background: #6219d6;
+      border-color: #6219d6;
+    }
+  }
+}
+

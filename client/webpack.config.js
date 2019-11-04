@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['whatwg-fetch', './src/index.js'],
   module: {
     rules: [
       {
@@ -18,8 +18,17 @@ module.exports = {
           // Translates CSS into CommonJS
           'css-loader',
           // Compiles Sass to CSS
-          'sass-loader',
+          'sass-loader'
         ],
+      },
+      {
+        // https://webpack.js.org/guides/asset-management
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
       }
     ]
   },
@@ -32,10 +41,14 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.SourceMapDevToolPlugin({})
   ],
   devServer: {
+    // Fixing error refresh with React Router
+    historyApiFallback: true,
     contentBase: './dist',
-    hot: true
+    hot: true,
+    compress: true
   }
 };

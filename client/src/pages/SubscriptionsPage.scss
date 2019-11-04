@@ -1,0 +1,16 @@
+.searchGroup {
+  display: flex;
+  justify-content: space-between;
+
+  .pageTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .searchGroup {
+    display: block;
+  }
+}

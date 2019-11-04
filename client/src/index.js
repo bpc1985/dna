@@ -1,12 +1,16 @@
+// Add Polyfill for Babel support IE11
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
 
-const title = 'Hello World';
+import "./index.scss";
 
 ReactDOM.render(
-  <App title={title} />,
+  <App />,
   document.getElementById('app')
 );
 

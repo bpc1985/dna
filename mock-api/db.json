@@ -1,0 +1,121 @@
+{
+  "dnaPackages": [
+    {
+      "id": "m1",
+      "type": "mobile",
+      "name": "DNA Max 4G Unlimited",
+      "description": "DNA Max 4G Unlimited has unlimited everything in your home country: speech, messaging and super-fast internet as much as you want. And even the maximum speed of the Internet is not limited. Includes a massive 20 GB / month EU data package.",
+      "price": "49.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "m2",
+      "type": "mobile",
+      "name": "DNA Super 4G Unlimited",
+      "description": "With the DNA Super 4G Unlimited Interface, you will enjoy super-fast 4G Internet with no data coverage. You can call and communicate effortlessly, with enough bandwidth to share. Internet and standard rate calls as well as text and multimedia messages within the EU / EEA are included in the monthly subscription fee.",
+      "price": "31.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "m3",
+      "type": "mobile",
+      "name": "DNA Fast 4G Unlimited Plus",
+      "description": "DNA High Speed ​​4G Unlimited Plus is an unlimited phone subscription that you use as much as you want for a fixed monthly rate. Call, communicate, and access high-speed 4G Internet with unlimited data coverage in your home country. The maximum internet speed is up to 150 Mbit / s.",
+      "price": "28.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "m4",
+      "type": "mobile",
+      "name": "DNA Fast 4G Jump",
+      "description": "It is an interface with unlimited everything at home: speech, messaging and the web as much as you want. The maximum Internet speed is 1 Mbit / s. Includes 10 GB / month EU data package.",
+      "price": "25.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "m5",
+      "type": "mobile",
+      "name": "DNA Jämpti",
+      "description": "The DNA Jämpti subscription has an affordable monthly fee and unlimited internet. For calls and messages in Finland and other EU / EEA countries, you pay harshly for usage: standard rate calls € 0.07 / inc. min and SMS messages 0.07 € / pc and multimedia messages 0.40 € / pc domestically. The maximum internet speed is 1 Mbit / s, no data loss.",
+      "price": "9.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "b1",
+      "type": "broadband",
+      "name": "DNA Travel 4G Max",
+      "description": "DNA Matkanetti 4G Max is, as its name suggests, a mobile internet with unlimited speed on the 4G network. Subscribe to surf, upload files, and watch up to 4K videos without a roof. Choose DNA Travel 4G Max to enjoy the maximum 4G data transfer rate now and in the future!",
+      "price": "44.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "b2",
+      "type": "broadband",
+      "name": "DNA Matkanetti 4G Super",
+      "description": "With a truly unlimited interface, you surf, download files and watch moving HD without a canopy. Select DNA Matkanetti 4G Super to enjoy really fast online. With a top speed of up to 300 Mbit / s, the Internet is enough for multiple users at the same time.",
+      "price": "29.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "b3",
+      "type": "broadband",
+      "name": "DNA Supernet 4G",
+      "description": "With a truly unlimited interface, you surf, download files and watch moving HD without a canopy. The supernet is your choice when you want an ultra-fast web on a tablet or more devices with a mobile monster.",
+      "price": "24.90",
+      "agreement": "monthly"
+    },
+    {
+      "id": "b4",
+      "type": "broadband",
+      "name": "DNA Dataprepaid",
+      "description": "DNA Dataprepaid is a ready-to-use mobile broadband subscription for tablets, mockups or even laptops. After downloading the subscription, you will be able to surf it unlimited for a month. After a month, you download more time for unlimited access, or data for lighter usage - whatever you want.",
+      "price": "24.90",
+      "agreement": "prepaid"
+    },
+    {
+      "id": "b5",
+      "type": "broadband",
+      "name": "DNA Tablet Net 4G",
+      "description": "DNA Tablet Net 4G is an affordable web interface for those who need a 4G Internet occasionally, for example on a tablet or computer. A truly unlimited 50 Mbit / s 4G internet connection is great for gaming, watching movies and videos and browsing the web.",
+      "price": "2.90",
+      "agreement": "monthly"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "s1m2",
+      "end_user": "User One",
+      "phone_number": "1110000111",
+      "address": "Example Tie 11",
+      "dnaPackageId": "m2",
+      "userId": "111"
+    },
+    {
+      "id": "s1m5",
+      "end_user": "User Two",
+      "phone_number": "1110000222",
+      "address": "",
+      "dnaPackageId": "m5",
+      "userId": "111"
+    },
+    {
+      "id": "s1b4",
+      "end_user": "User One",
+      "phone_number": "",
+      "address": "Example Tie 11",
+      "dnaPackageId": "b4",
+      "userId": "111"
+    }
+  ],
+  "users": [
+    {
+      "id": "111",
+      "first_name": "User",
+      "last_name": "One",
+      "email": "user1@mail.com",
+      "password": "user1",
+      "token": "token1",
+      "subscriptions": ["s1m2", "s1m5", "s1b4"]
+    }
+  ]
+}
