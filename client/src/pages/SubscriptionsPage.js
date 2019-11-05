@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Search from "../components/Search/Search";
 import ListCard from "../components/Cards/ListCard";
 import Loading from '../components/Loading/Loading'
-import { fetchData, isSearchTermIncluded } from "../utils";
+import { fetchSubscriptionsData, isSearchTermIncluded } from "../utils";
 
 import "./SubscriptionsPage.scss";
 
@@ -16,15 +16,16 @@ export default function SubscriptionsPage(props) {
   const [state, setState] = useState(initalState);
 
   useEffect(() => {
-    async function fetchSubscriptionsData() {
-      const subscriptions = await fetchData("subscriptions?_expand=dnaPackage");
+    async function fetchSubscriptions() {
+      // const subscriptions = await fetchData("subscriptions?_expand=dnaPackage");
+      const subscriptions = await fetchSubscriptionsData();
       setState({
         ...state,
         subscriptions,
         filteredSubscriptions: subscriptions
       });
     }
-    fetchSubscriptionsData();
+    fetchSubscriptions();
 
     return () => {};
   }, []);

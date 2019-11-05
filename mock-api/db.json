@@ -113,7 +113,7 @@
       "first_name": "User",
       "last_name": "One",
       "email": "user1@mail.com",
-      "password": "user1",
+      "password": "abcd@1234",
       "token": "token1",
       "subscriptions": ["s1m2", "s1m5", "s1b4"]
     }

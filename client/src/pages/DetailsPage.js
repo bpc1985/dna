@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchData } from "../utils";
-import Loading from '../components/Loading/Loading'
+import { fetchSubscriptionDetailData } from "../utils";
 
 import "./DetailsPage.scss";
 
@@ -11,8 +10,13 @@ export default function DetailsPage() {
 
   useEffect(() => {
     async function fetchDetailsData() {
-      const data = await fetchData(`subscriptions/${sid}?_expand=dnaPackage&_expand=user`);
-      setDetail(data);
+      // const data = await fetchData(`subscriptions/${sid}?_expand=dnaPackage&_expand=user`);
+      try {
+        const data = await fetchSubscriptionDetailData(sid);
+        setDetail(data);
+      } catch (error) {
+        console.log(error.errorMessage);
+      }
     }
     fetchDetailsData();
 
@@ -20,7 +24,7 @@ export default function DetailsPage() {
   }, []);
 
   if (!detail) {
-    return <Loading />;
+    return <div>No Data</div>;
   }
 
   const { phone_number, address, end_user, user, dnaPackage } = detail;

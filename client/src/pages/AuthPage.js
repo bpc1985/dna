@@ -1,32 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { fetchData } from "../utils";
+import { postLogIn, getUrlParams } from "../utils";
 
 import "./AuthPage.scss";
 
 export default function AuthPage(props) {
-  const [authenticated, setAuthenticated] = useState(true);
-  const [users, setUsers] = useState();
+  const params = getUrlParams(props.location.search);
+  const [status, setStatus] = useState(true);
 
-  useEffect(() => {
-    async function fetchUsers() {
-      const data = await fetchData("users");
-      setUsers(data);
-    }
-    fetchUsers();
-
-    return () => {};
-  }, []);
-
-  const submitHandler = values => {
-    const foundUser = users.find(user => {
-      return user.email === values.email && user.password === values.password;
-    });
-    if (foundUser) {
-      props.history.push("/subscriptions");
-    } else {
-      setAuthenticated(false);
+  const submitHandler = async (values) => {
+    try {
+      const res = await postLogIn({
+        email: values.email,
+        password: values.password
+      });
+      localStorage.setItem('token', res.token);
+      props.userHasAuthenticated(true);
+      props.history.push(params.redirect || '/');
+    } catch (e) {
+      setStatus(false);
     }
   };
 
@@ -50,7 +43,7 @@ export default function AuthPage(props) {
       }}
     >
       <Form className="authForm">
-        {!authenticated && <div className="formControl">
+        {!status && <div className="formControl">
           <div className="errorMessage">Ops! Something is wrong with your email or password</div>
         </div>}
         <div className="formControl">
