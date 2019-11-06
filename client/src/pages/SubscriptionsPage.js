@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search/Search";
 import ListCard from "../components/Cards/ListCard";
-import Loading from '../components/Loading/Loading'
+import Loading from "../components/Loading/Loading";
 import { fetchSubscriptionsData, isSearchTermIncluded } from "../utils";
 
 import "./SubscriptionsPage.scss";

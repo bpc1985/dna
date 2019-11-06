@@ -1,3 +1,5 @@
+@import "stylesheets/index";
+
 .spinner {
   display: flex;
   justify-content: center;
@@ -17,8 +19,8 @@
     height: 46px;
     margin: 1px;
     border-radius: 50%;
-    border: 5px solid #ff007c;
-    border-color: #ff007c transparent #ff007c transparent;
+    border: 5px solid $pink;
+    border-color: $pink transparent $pink transparent;
     animation: ldsDualRing 1.2s linear infinite;
   }
 

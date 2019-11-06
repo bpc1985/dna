@@ -1,7 +1,9 @@
+@import "stylesheets/index";
+
 .detailListItem {
   margin: 1rem 0;
   padding: 1rem;
-  border: 1px solid #ff007c;
+  border: 1px solid $pink;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -25,7 +27,7 @@
     justify-content: space-between;
     margin: 10px 0;
     font-size: 1.5rem;
-    color: #ff007c;
+    color: $pink;
 
     @media (max-width: 420px) {
       display: block;

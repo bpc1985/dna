@@ -1,3 +1,5 @@
+@import "stylesheets/index";
+
 .authForm {
   width: 25rem;
   max-width: 80%;
@@ -17,30 +19,30 @@
       margin: 8px 0;
       width: 100%;
       display: block;
-      border: 1px solid #ccc;
+      border: 1px solid $light-gray;
       box-sizing: border-box;
     }
 
     .errorMessage {
-      color: #ff007c;
+      color: $pink;
     }
   }
 
   .formActions {
     button {
-      background: #ff007c;
+      background: $pink;
       font: inherit;
-      border: 1px solid #ff007c;
+      border: 1px solid $pink;
       border-radius: 3px;
       padding: 0.25rem 1rem;
       margin-right: 1rem;
       box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
-      color: #ffffff;
+      color: $white;
       cursor: pointer;
 
       &:hover, &:active {
-        background: #6219d6;
-        border-color: #6219d6;
+        background: $purple;
+        border-color: $purple;
       }
     }
   }

@@ -1,9 +1,11 @@
+@import "stylesheets/index";
+
 .searchInput {
   padding: 5px 10px;
   margin: 8px 0;
   width: 100%;
   display: block;
-  border: 1px solid #ff007c;
+  border: 1px solid $pink;
   box-sizing: border-box;
   min-width: 180px;
 }
