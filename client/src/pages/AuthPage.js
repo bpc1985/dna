@@ -15,8 +15,11 @@ export default function AuthPage(props) {
         email: values.email,
         password: values.password
       });
+      // Save token to local storage
       localStorage.setItem('token', res.token);
+      // Notify to global authenticated variable
       props.userHasAuthenticated(true);
+      // Redirecting to previous page with required auth, otherwise go to index page
       props.history.push(params.redirect || '/');
     } catch (e) {
       setStatus(false);

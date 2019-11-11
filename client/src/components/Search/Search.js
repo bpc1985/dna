@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import { DebounceInput } from "react-debounce-input";
 
 import "./Search.scss";
 
+// Search component with debouce time out
 export default function Search({searchTerm, onSearch}) {
   return (
     <div>

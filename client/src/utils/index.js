@@ -77,6 +77,7 @@ export const isSearchTermIncluded = (dnaPackage, searchTerm) => {
   );
 };
 
+// Parse URL to find params
 export const getUrlParams = search => {
   if (search) {
     let hashes = search.slice(search.indexOf("?") + 1).split("&");
@@ -87,3 +88,8 @@ export const getUrlParams = search => {
   }
   return {};
 };
+
+// Check whether token is available in localStorage
+export const isTokenAvailable = () => {
+  return !!localStorage.getItem(AUTH_HEADER);
+}

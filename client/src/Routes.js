@@ -7,6 +7,7 @@ import SubscriptionsPage from "./pages/SubscriptionsPage";
 import DetailsPage from "./pages/DetailsPage";
 import MePage from "./pages/MePage";
 
+// HOC returns Component need to be authenticated, otherwise redirect to login page
 const AuthenticatedRoute = ({
   component: Component,
   props: cProps,
