@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListCard should render component 1`] = `
+<div>
+  <ul
+    class="subscriptionList"
+  >
+    <li
+      class="subscriptionItem"
+    >
+      <div>
+        <h1>
+          Package 1
+        </h1>
+        <h2>
+          111111111
+        </h2>
+      </div>
+      <div>
+        <span>
+          mobile
+        </span>
+        <button
+          class="btn"
+        >
+          Details
+        </button>
+      </div>
+    </li>
+    <li
+      class="subscriptionItem"
+    >
+      <div>
+        <h1>
+          Package 2
+        </h1>
+        <h2>
+          Address 2
+        </h2>
+      </div>
+      <div>
+        <span>
+          boardband
+        </span>
+        <button
+          class="btn"
+        >
+          Details
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

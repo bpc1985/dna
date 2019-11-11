@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubscriptionsPage should render component 1`] = `
+<div>
+  <div
+    class="searchGroup"
+  >
+    <div
+      class="pageTitle"
+    >
+      Subscriptions
+    </div>
+    <div>
+      <input
+        class="searchInput"
+        name="searchInput"
+        placeholder="Search your package"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <ul
+    class="subscriptionList"
+  >
+    <li
+      class="subscriptionItem"
+    >
+      <div>
+        <h1>
+          Package 1
+        </h1>
+        <h2>
+          111111111
+        </h2>
+      </div>
+      <div>
+        <span>
+          mobile
+        </span>
+        <button
+          class="btn"
+        >
+          Details
+        </button>
+      </div>
+    </li>
+    <li
+      class="subscriptionItem"
+    >
+      <div>
+        <h1>
+          Package 2
+        </h1>
+        <h2>
+          Address 2
+        </h2>
+      </div>
+      <div>
+        <span>
+          boardband
+        </span>
+        <button
+          class="btn"
+        >
+          Details
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

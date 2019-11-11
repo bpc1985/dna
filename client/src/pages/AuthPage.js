@@ -34,7 +34,7 @@ export default function AuthPage(props) {
           .email("Email should be in right format")
           .required("Email is required"),
         password: Yup.string()
-          .min(4, "Password must be 4 characters or more")
+          .min(7, "Password must be 7 characters or more")
           .required("Password is required")
       })}
       onSubmit={(values, { setSubmitting }) => {
@@ -47,14 +47,14 @@ export default function AuthPage(props) {
           <div className="errorMessage">Ops! Something is wrong with your email or password</div>
         </div>}
         <div className="formControl">
-          <label htmlFor="email">E-Mail</label>
-          <Field name="email" type="text" />
-          <ErrorMessage component="div" name="email" className="errorMessage" />
+          <label htmlFor="email">Email</label>
+          <Field id="email" name="email" type="text" />
+          <ErrorMessage component="div" name="email" className="errorMessage" data-testid="emailError" />
         </div>
         <div className="formControl">
           <label htmlFor="password">Password</label>
-          <Field name="password" type="password" />
-          <ErrorMessage component="div" name="password" className="errorMessage" />
+          <Field id="password" name="password" type="password" />
+          <ErrorMessage component="div" name="password" className="errorMessage" data-testid="passwordError" />
         </div>
         <div className="formActions">
           <button type="submit">Submit</button>

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPage should render component 1`] = `
+<div>
+  <h2>
+    Subscription Details
+  </h2>
+  <div
+    class="detailListItem"
+  >
+    <div
+      class="detailInfoLeft"
+    >
+      <h1>
+        Customer Info
+      </h1>
+      <div>
+        Payer: 
+        Hung
+         
+        Ho
+      </div>
+      <div>
+        User: 
+        Micheal Lang
+      </div>
+      <div>
+        Email: 
+        user1@mail.com
+      </div>
+      <div>
+        Phone Number: 
+        111111111
+      </div>
+      <div>
+        Address: 
+        Address 1
+      </div>
+    </div>
+    <div
+      class="detailInfoRight"
+    >
+      <h1>
+        <div>
+          Package 1
+        </div>
+        <div>
+          (
+          mobile
+          )
+        </div>
+      </h1>
+      <div>
+        Description 1
+      </div>
+      <div>
+        Price: €
+        99
+         
+         / month
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -8,6 +8,7 @@ export default function Search({searchTerm, onSearch}) {
     <div>
       <DebounceInput
         className="searchInput"
+        name="searchInput"
         placeholder="Search your package"
         minLength={2}
         debounceTimeout={300}

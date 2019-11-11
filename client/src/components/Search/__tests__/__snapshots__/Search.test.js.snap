@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render component 1`] = `
+<div>
+  <div>
+    <input
+      class="searchInput"
+      name="searchInput"
+      placeholder="Search your package"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;

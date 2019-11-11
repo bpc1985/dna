@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainNavigation should render component when user is logged in 1`] = `
+<div>
+  <header
+    class="mainMavigation"
+  >
+    <div
+      class="logo"
+    >
+      <img
+        alt="DNA"
+        src=""
+      />
+    </div>
+    <nav
+      class="items"
+    >
+      <ul>
+        <li>
+          <a
+            href="/subscriptions"
+          >
+            Subscriptions
+          </a>
+        </li>
+        <li>
+          <a
+            href="/me"
+          >
+            Account
+          </a>
+        </li>
+        <li>
+          <button>
+            Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`MainNavigation should render component when user is not logged in 1`] = `
+<div>
+  <header
+    class="mainMavigation"
+  >
+    <div
+      class="logo"
+    >
+      <img
+        alt="DNA"
+        src=""
+      />
+    </div>
+    <nav
+      class="items"
+    >
+      <ul>
+        <li>
+          <a
+            href="/login"
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;
